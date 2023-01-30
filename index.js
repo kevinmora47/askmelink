@@ -9,7 +9,7 @@ app.get('/', async function (req, res) {
 });
 
 app.get('/askMe', async function (req, res) {
-  const questionAsked = req.query.question;
+  const questionAsked = req.query.question.replace('?', ':');
   const answer = await askQuestion(questionAsked);
 
   const request = {

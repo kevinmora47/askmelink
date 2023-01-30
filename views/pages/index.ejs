@@ -8,13 +8,27 @@
 
     <main>
       <div class="jumbotron">
-        <h1>Ask me a question!</h1>
+        <h1 class="display-6 text-dark">Ask me a question!</h1>
+        <p class="lead">
+          Introducing "AskMeLink", the ultimate language generation app.
+          Experience seamless conversation with our advanced AI technology, just
+          like ChatGPT. Generate text, answer questions, and more - all in
+          natural language. Try it now!
+        </p>
+        <hr class="my-4" />
         <form action="/askMe" method="GET">
           <div class="form-group">
             <input type="text" name="question" class="form-control"
             id="question-text" placeholder="Enter your question..."" />
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-dark">Ask me!</button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is
+              hidden by default but revealed when the user activates the
+              relevant trigger.
+            </div>
+          </div>
         </form>
       </div>
     </main>

@@ -23,18 +23,19 @@
                 <div class="card-body">
                   <blockquote class="blockquote mb-0">
                     <footer class="blockquote-footer">
-                      <textarea class = "form-control font-italic" rows = "8" placeholder = "Player Details"><%= request.answer %></textarea>
+                      <textarea class = "form-control font-italic" rows = "8" placeholder = "Player Details">
+                        <%= request.answer %>
+                      </textarea>
                     </footer>
                   </blockquote>
                 </div>
               </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-dark">Submit</button>
         </form>
       </div>
     </main>
-
     <footer><%- include('../partials/footer'); %></footer>
   </body>
 </html>
